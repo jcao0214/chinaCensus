@@ -3,7 +3,7 @@
 clearvars;
 load('cleanData.mat' , 'coors' , 'places');
 
-china_provinces = shaperead('/Users/Yilin/Dropbox/Misc/MATLAB/ChinaMaps/ChinaProvince/ChinaProvince.shp' , 'usegeocoords' , true);
+china_provinces = shaperead('ChinaProvince.shp' , 'usegeocoords' , true);
 china_provinces([5 32]) = [];
 
 files = dir('MAT/*.mat');
